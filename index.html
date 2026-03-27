@@ -180,10 +180,23 @@
     ❤️ 2026 | Web Pink x Red siêu cháy của bạn 🔥
   </footer>  <script>
     function copyText(text) {
-      alert('Đã copy: ' + text);
-      if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(text);
-      } else {
+      // Force copy for all devices
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+
+      try {
+        document.execCommand('copy');
+      } catch (err) {
+        console.log('Copy failed');
+      }
+
+      document.body.removeChild(textarea);
+    } else {
         const textarea = document.createElement('textarea');
         textarea.value = text;
         document.body.appendChild(textarea);
@@ -209,4 +222,4 @@
   </script>  <div style="text-align:center; margin-bottom:20px;">
     <button onclick="copyLink()" class="btn">📋 Copy link</button>
   </div></body>
-</html>
+</html
