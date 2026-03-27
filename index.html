@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>💖❤️ Trang Cá Nhân Của AnhVN_MC ❤️💖</title>  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">  <style>
+  <title>💖❤️ Trang Cá Nhân Pink x Red ❤️💖</title>  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">  <style>
     * {
       margin: 0;
       padding: 0;
@@ -132,7 +132,7 @@
     }
   </style></head>
 <body>  <header>
-    <img src="https://i.postimg.cc/43DKJ41K/avatar-anime-nam-buon-26.jpg" class="avatar">
+    <img src="https://via.placeholder.com/160" class="avatar">
     <h1>Tên Của Bạn ❤️</h1>
     <p class="subtitle">💖 Pink & Red Vibes | Cute nhưng cháy 🔥</p>
   </header>  <div class="container"><div class="card">
@@ -156,24 +156,41 @@
     TikTok: <a href="#">Link của bạn</a>
   </p>
   <a class="btn" href="#">Nhắn mình ngay ❤️</a>
-    </div>
+</div>
 
-      <div class="card">
-      <h2>🎮 Game</h2>
-      <p>
-        Minecraft: <span>Tên game</span>
-        <button onclick="copyText('Tên game')" class="btn">Copy</button><br>
-        Free Fire: <span>2725424909</span>
-        <button onclick="copyText('2725424909')" class="btn">Copy</button><br>
-        Roblox: <span>Tên game</span>
-        <button onclick="copyText('Tên game')" class="btn">Copy</button><br>
-        FC Mobile: <span>Tên game</span>
-        <button onclick="copyText('Tên game')" class="btn">Copy</button><br>
-      </p>
-    </div>
-
+  <div class="card">
+  <h2>🎮 Game</h2>
+  <p>
+    Minecraft: <span>Tên game</span>
+    <button type="button" onclick="copyText('Tên game')" class="btn">Copy</button><br>
+    Free Fire: <span>2725424909</span>
+    <button type="button" onclick="copyText('2725424909')" class="btn">Copy</button><br>
+    Roblox: <span>Tên game</span>
+    <button type="button" onclick="copyText('Tên game')" class="btn">Copy</button><br>
+    FC Mobile: <span>Tên game</span>
+    <button type="button" onclick="copyText('Tên game')" class="btn">Copy</button><br>
+  </p>
+</div>
 
   </div>  <footer>
     ❤️ 2026 | Web Pink x Red siêu cháy của bạn 🔥
-  </footer></body>
-</html>
+  </footer>  <script>
+    function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text);
+      } else {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.focus();
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+      }
+    }
+
+    function copyLink() {
+      copyText(window.location.href);
+    }
+  </div></body>
+    </html>
