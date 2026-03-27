@@ -1,0 +1,179 @@
+<!DOCTYPE html><html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💖❤️ Trang Cá Nhân Của AnhVN_MC ❤️💖</title>  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ff4d6d, #ff85a1, #ffc1cc);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px);} 
+      to { opacity: 1; transform: translateY(0);} 
+    }
+
+    .avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #ff1744;
+      box-shadow: 0 0 30px #ff1744, 0 0 60px #ff4da6;
+      transition: 0.4s;
+    }
+
+    .avatar:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 80px #ff1744, 0 0 100px #ff4da6;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-top: 20px;
+      background: linear-gradient(90deg, #ff1744, #ff4da6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      opacity: 0.9;
+      margin-top: 10px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(255,0,60,0.3);
+      transition: 0.4s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      width: 150%;
+      height: 150%;
+      background: linear-gradient(45deg, transparent, #ff1744, #ff4da6, transparent);
+      top: -50%;
+      left: -50%;
+      transform: rotate(25deg);
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    .card:hover::before {
+      opacity: 0.5;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      color: #ff1744;
+    }
+
+    a {
+      color: #ff1744;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #ff4da6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #ff1744, #ff4da6);
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px #ff1744;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      opacity: 0.9;
+    }
+  </style></head>
+<body>  <header>
+    <img src="https://i.postimg.cc/43DKJ41K/avatar-anime-nam-buon-26.jpg" class="avatar">
+    <h1>Tên Của Bạn ❤️</h1>
+    <p class="subtitle">💖 Pink & Red Vibes | Cute nhưng cháy 🔥</p>
+  </header>  <div class="container"><div class="card">
+  <h2>💘 Giới thiệu</h2>
+  <p>Mình thích màu hồng + đỏ, yêu Minecraft và thích làm mọi thứ thật nổi bật 🔥💕</p>
+</div>
+
+<div class="card">
+  <h2>⚡ Kỹ năng</h2>
+  <p>
+    ✔ Minecraft Server<br>
+    ✔ Plugin & Script<br>
+    ✔ Discord Setup
+  </p>
+</div>
+
+<div class="card">
+  <h2>💌 Liên hệ</h2>
+  <p>
+    Facebook: <a href="#">Link của bạn</a><br>
+    TikTok: <a href="#">Link của bạn</a>
+  </p>
+  <a class="btn" href="#">Nhắn mình ngay ❤️</a>
+    </div>
+
+      <div class="card">
+      <h2>🎮 Game</h2>
+      <p>
+        Minecraft: <span>Tên game</span>
+        <button onclick="copyText('Tên game')" class="btn">Copy</button><br>
+        Free Fire: <span>2725424909</span>
+        <button onclick="copyText('2725424909')" class="btn">Copy</button><br>
+        Roblox: <span>Tên game</span>
+        <button onclick="copyText('Tên game')" class="btn">Copy</button><br>
+        FC Mobile: <span>Tên game</span>
+        <button onclick="copyText('Tên game')" class="btn">Copy</button><br>
+      </p>
+    </div>
+
+
+  </div>  <footer>
+    ❤️ 2026 | Web Pink x Red siêu cháy của bạn 🔥
+  </footer></body>
+</html>
